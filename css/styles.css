@@ -65,9 +65,9 @@ h2.d { font-size: clamp(2rem, 5vw, 4rem); }
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  /* viewBox recortado al logo: ratio 1830/1990 ≈ 0.92 */
-  height: min(92vh, 96vw);
-  width: calc(min(92vh, 96vw) * 0.92);
+  /* viewBox recortado al círculo del logo: ratio 1720/1470 ≈ 1.17 */
+  height: min(88vh, 80vw);
+  width: calc(min(88vh, 80vw) * 1.17);
   opacity: 0;
   z-index: 50;
   pointer-events: none;
