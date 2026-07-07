@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Freimanautos – Servicio profesional automotriz en Bogotá desde 1987. Especialistas en marcas asiáticas. Latonería, pintura, mecánica y detailing.">
+  <title>Freimanautos – Servicio Profesional Automotriz desde 1987</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- ══════════════════════════════════════════════════
+     LOGO FIJO — aparece al hacer scroll pasado el hero
+     SVG original del logo Freimanautos (limpio, sin fondo)
+     ══════════════════════════════════════════════════ -->
+<div id="logoWatermark" class="logo-watermark" aria-hidden="true">
+  <svg viewBox="960 620 1830 1990" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- F interior y elemento superior -->
+    <path d="M2305.8 1021.63C2303.64 1031.57 2286.52 1065.24 2272.95 1086.14C2257.21 1110.28 2228.09 1141.52 2208.62 1154.91C2200.94 1159.98 2185.6 1168.71 2174.38 1174.18C2137.01 1192.44 2150.19 1191.23 1963.29 1192.65C1786.63 1193.86 1793.51 1193.46 1777.19 1204.01C1762.04 1213.74 1753.78 1228.15 1745.71 1259.59C1742.56 1271.36 1736.27 1295.1 1731.54 1312.34C1726.82 1329.58 1711.67 1384.76 1697.9 1435.08C1684.13 1485.19 1668.2 1543.61 1662.3 1564.91C1649.9 1609.34 1583.41 1855.42 1573.77 1891.54C1570.23 1904.93 1563.73 1930.08 1559.21 1947.33C1528.72 2064.79 1522.62 2086.29 1519.27 2086.9C1512.58 2088.32 1440.78 2066 1405.56 2051.8C1385.69 2043.69 1345.95 2026.44 1344.97 2025.43C1344.77 2025.23 1349.3 2005.95 1355.2 1982.62C1361.1 1959.29 1372.31 1914.66 1379.99 1883.42C1387.66 1852.18 1397.1 1815.66 1400.64 1802.27C1404.38 1788.88 1415.4 1746.48 1425.24 1707.94C1435.27 1669.39 1447.66 1621.51 1452.78 1601.43C1464.78 1554.97 1510.62 1383.55 1537.37 1284.95C1544.06 1260.4 1552.91 1227.34 1557.24 1211.51C1570.42 1162.01 1577.9 1144.16 1596.98 1114.54C1633.18 1058.95 1699.08 1021.63 1768.53 1017.57C1774.04 1017.16 1897.39 1016.76 2042.77 1016.55L2306.98 1016.15L2305.8 1021.63Z" fill="white"/>
+    <!-- Barra horizontal de la F -->
+    <path d="M2130.51 1353.32C2127.96 1362.04 2107.5 1400.59 2098.45 1413.78C2071.69 1452.93 2038.44 1480.72 1999.29 1496.75C1966.83 1509.94 1970.57 1509.53 1859.03 1510.95L1756.73 1512.17L1737.84 1518.86C1718.76 1525.35 1701.25 1535.7 1689.05 1547.47C1685.51 1551.12 1681.97 1553.55 1681.58 1552.94C1680.98 1552.34 1683.74 1541.18 1687.67 1527.99C1693.74 1507.21 1705.05 1467.38 1730.91 1376.38L1731.35 1374.82C1735.09 1361.84 1738.04 1350.48 1738.04 1349.87C1738.04 1349.26 1826.57 1348.86 1934.96 1348.86H2131.69L2130.51 1353.32Z" fill="white"/>
+    <!-- Círculo principal -->
+    <path d="M1894.44 681.614C1976.47 688.918 2065.2 714.885 2139.37 753.228C2240.49 805.568 2323.11 878.196 2389.61 973.545C2456.1 1068.69 2499.97 1187.98 2513.35 1310.31C2517.29 1345.2 2516.7 1428.58 2512.37 1463.48C2498.6 1576.27 2461.02 1682.78 2401.41 1778.94C2370.92 1827.83 2319.18 1888.7 2276.29 1925.82C2233.4 1963.15 2194.45 1989.93 2146.45 2015.49C2052.22 2065.6 1957.59 2089.13 1851.16 2089.33C1760.86 2089.33 1690.23 2074.93 1602.69 2038.82C1562.36 2022.18 1556.45 2018.94 1558.03 2014.68C1558.62 2012.85 1561.18 2004.53 1563.54 1996.62C1565.7 1988.51 1568.46 1981.81 1569.44 1981.81C1570.62 1981.81 1579.87 1985.87 1590.29 1990.74C1746.69 2064.38 1918.05 2069.66 2076.81 2005.35C2230.06 1943.47 2355.18 1817.49 2425.22 1654.18C2454.14 1587.23 2474.01 1500.4 2479.71 1418.85C2481.68 1389.23 2479.91 1332.83 2475.78 1300.17C2461.02 1181.08 2412.04 1061.79 2338.06 965.43C2319.18 940.883 2273.93 893.614 2249.54 872.719C2124.22 766.009 1962.11 711.233 1803.35 721.58C1684.92 729.289 1591.67 762.763 1489.17 834.376C1358.74 925.262 1262.74 1072.14 1227.72 1234.23C1216.11 1287.59 1213.95 1310.72 1213.95 1377.26C1213.95 1430.61 1214.54 1442.99 1218.08 1466.52C1236.96 1590.27 1280.05 1697.19 1348.71 1791.72C1358.74 1805.32 1369.36 1819.31 1372.51 1822.76L1378.41 1829.25L1372.9 1849.14C1369.95 1860.29 1367.2 1869.63 1366.81 1870.03C1365.63 1871.86 1355.4 1860.5 1335.92 1835.75C1313.69 1807.34 1311.92 1804.91 1292.25 1774.68C1233.42 1684.2 1192.5 1567.15 1180.11 1453.33C1175.98 1414.79 1175.98 1346.02 1180.11 1307.27C1197.22 1145.99 1262.54 1001.74 1370.15 887.528C1484.45 766.414 1635.15 692.975 1795.09 680.803C1816.14 679.18 1872.8 679.586 1894.44 681.614Z" fill="white"/>
+    <!-- Arco derecho de velocidad -->
+    <path d="M2575.52 927.697C2583.78 940.883 2609.36 993.021 2620.37 1019.19C2655.59 1102.57 2679.39 1188.99 2687.26 1261.82C2696.11 1345.61 2695.52 1412.96 2685.1 1492.89C2667.19 1629.63 2622.34 1755 2547.98 1875.31C2523.58 1914.87 2484.43 1968.02 2456.69 1999.67L2447.25 2010.42L2432.1 2003.93C2423.64 2000.48 2416.76 1996.42 2416.76 1995C2416.76 1993.78 2418.72 1990.94 2420.89 1988.71C2428.56 1981.61 2453.35 1950.57 2474.6 1921.36C2578.08 1779.15 2637.29 1626.38 2653.82 1459.62C2657.36 1424.12 2657.95 1341.55 2654.8 1304.22C2650.28 1248.03 2640.05 1194.47 2623.32 1136.86C2603.65 1069.91 2579.85 1012.29 2548.96 956.707L2538.93 938.854L2546.21 934.188C2561.94 924.045 2567.26 920.799 2569.22 920.799C2570.4 920.799 2573.16 924.045 2575.52 927.697Z" fill="white"/>
+    <!-- Arco izquierdo de velocidad -->
+    <path d="M1160.83 919.987C1167.72 925.059 1173.42 929.725 1173.42 930.131C1173.42 930.537 1166.73 942.506 1158.47 956.707C1087.84 1077.42 1045.74 1234.64 1045.55 1377.46C1045.55 1499.79 1077.42 1635.31 1134.07 1753.58C1165.94 1820.13 1201.75 1876.73 1250.15 1936.98C1259.98 1949.15 1267.85 1959.5 1267.85 1960.11C1267.85 1960.92 1260.77 1964.98 1251.92 1969.24L1235.98 1977.15L1227.52 1967.82C1205.68 1943.88 1168.31 1892.14 1144.7 1852.99C1052.43 1700.84 1001.48 1505.88 1010.13 1337.29C1016.23 1218 1039.64 1118.4 1086.47 1012.7C1107.32 966.039 1140.57 907.612 1145.29 909.438C1146.86 910.047 1153.75 914.916 1160.83 919.987Z" fill="white"/>
+    <!-- Texto: F -->
+    <path d="M799.4 2548V2352H937.72V2376.36H827.4V2548H799.4ZM824.6 2468.76V2444.68H925.68V2468.76H824.6Z" fill="white"/>
+    <!-- r -->
+    <path d="M970.48 2548V2399.6H996.24V2439.92L993.72 2429.84C997.827 2419.57 1004.73 2411.73 1014.44 2406.32C1024.15 2400.91 1036.09 2398.2 1050.28 2398.2V2424.24C1049.16 2424.05 1048.04 2423.96 1046.92 2423.96C1045.99 2423.96 1045.05 2423.96 1044.12 2423.96C1029.75 2423.96 1018.36 2428.25 1009.96 2436.84C1001.56 2445.43 997.36 2457.84 997.36 2474.08V2548H970.48Z" fill="white"/>
+    <!-- e -->
+    <path d="M1148.12 2549.68C1132.26 2549.68 1118.26 2546.41 1106.12 2539.88C1094.18 2533.35 1084.84 2524.39 1078.12 2513C1071.59 2501.61 1068.32 2488.55 1068.32 2473.8C1068.32 2459.05 1071.5 2445.99 1077.84 2434.6C1084.38 2423.21 1093.24 2414.35 1104.44 2408C1115.83 2401.47 1128.62 2398.2 1142.8 2398.2C1157.18 2398.2 1169.87 2401.37 1180.88 2407.72C1191.9 2414.07 1200.48 2423.03 1206.64 2434.6C1212.99 2445.99 1216.16 2459.33 1216.16 2474.64C1216.16 2475.76 1216.07 2477.07 1215.88 2478.56C1215.88 2480.05 1215.79 2481.45 1215.6 2482.76H1089.32V2463.44H1201.6L1190.68 2470.16C1190.87 2460.64 1188.91 2452.15 1184.8 2444.68C1180.7 2437.21 1175 2431.43 1167.72 2427.32C1160.63 2423.03 1152.32 2420.88 1142.8 2420.88C1133.47 2420.88 1125.16 2423.03 1117.88 2427.32C1110.6 2431.43 1104.91 2437.31 1100.8 2444.96C1096.7 2452.43 1094.64 2461.01 1094.64 2470.72V2475.2C1094.64 2485.09 1096.88 2493.96 1101.36 2501.8C1106.03 2509.45 1112.47 2515.43 1120.68 2519.72C1128.9 2524.01 1138.32 2526.16 1148.96 2526.16C1157.74 2526.16 1165.67 2524.67 1172.76 2521.68C1180.04 2518.69 1186.39 2514.21 1191.8 2508.24L1206.64 2525.6C1199.92 2533.44 1191.52 2539.41 1181.44 2543.52C1171.55 2547.63 1160.44 2549.68 1148.12 2549.68Z" fill="white"/>
+    <!-- i -->
+    <path d="M1253.49 2548V2399.6H1280.37V2548H1253.49ZM1266.93 2371.04C1261.7 2371.04 1257.31 2369.36 1253.77 2366C1250.41 2362.64 1248.73 2358.53 1248.73 2353.68C1248.73 2348.64 1250.41 2344.44 1253.77 2341.08C1257.31 2337.72 1261.7 2336.04 1266.93 2336.04C1272.15 2336.04 1276.45 2337.72 1279.81 2341.08C1283.35 2344.25 1285.13 2348.27 1285.13 2353.12C1285.13 2358.16 1283.45 2362.45 1280.09 2366C1276.73 2369.36 1272.34 2371.04 1266.93 2371.04Z" fill="white"/>
+    <!-- m -->
+    <path d="M1331.69 2548V2399.6H1357.45V2439.08L1353.25 2429C1357.92 2419.29 1365.1 2411.73 1374.81 2406.32C1384.52 2400.91 1395.81 2398.2 1408.69 2398.2C1422.88 2398.2 1435.1 2401.75 1445.37 2408.84C1455.64 2415.75 1462.36 2426.29 1465.53 2440.48L1454.61 2436C1459.09 2424.61 1466.93 2415.47 1478.13 2408.56C1489.33 2401.65 1502.4 2398.2 1517.33 2398.2C1529.28 2398.2 1539.82 2400.53 1548.97 2405.2C1558.12 2409.87 1565.21 2416.96 1570.25 2426.48C1575.48 2436 1578.09 2448.04 1578.09 2462.6V2548H1551.21V2465.68C1551.21 2451.31 1547.85 2440.48 1541.13 2433.2C1534.41 2425.92 1524.98 2422.28 1512.85 2422.28C1503.89 2422.28 1496.05 2424.15 1489.33 2427.88C1482.61 2431.61 1477.38 2437.12 1473.65 2444.4C1470.1 2451.68 1468.33 2460.73 1468.33 2471.56V2548H1441.45V2465.68C1441.45 2451.31 1438.09 2440.48 1431.37 2433.2C1424.84 2425.92 1415.41 2422.28 1403.09 2422.28C1394.32 2422.28 1386.57 2424.15 1379.85 2427.88C1373.13 2431.61 1367.9 2437.12 1364.17 2444.4C1360.44 2451.68 1358.57 2460.73 1358.57 2471.56V2548H1331.69Z" fill="white"/>
+    <!-- a -->
+    <path d="M1719.67 2548V2516.64L1718.27 2510.76V2457.28C1718.27 2445.89 1714.91 2437.12 1708.19 2430.96C1701.66 2424.61 1691.76 2421.44 1678.51 2421.44C1669.74 2421.44 1661.15 2422.93 1652.75 2425.92C1644.35 2428.72 1637.26 2432.55 1631.47 2437.4L1620.27 2417.24C1627.92 2411.08 1637.07 2406.41 1647.71 2403.24C1658.54 2399.88 1669.83 2398.2 1681.59 2398.2C1701.94 2398.2 1717.62 2403.15 1728.63 2413.04C1739.64 2422.93 1745.15 2438.05 1745.15 2458.4V2548H1719.67ZM1670.95 2549.68C1659.94 2549.68 1650.23 2547.81 1641.83 2544.08C1633.62 2540.35 1627.27 2535.21 1622.79 2528.68C1618.31 2521.96 1616.07 2514.4 1616.07 2506C1616.07 2497.97 1617.94 2490.69 1621.67 2484.16C1625.59 2477.63 1631.84 2472.4 1640.43 2468.48C1649.2 2464.56 1660.96 2462.6 1675.71 2462.6H1722.75V2481.92H1676.83C1663.39 2481.92 1654.34 2484.16 1649.67 2488.64C1645 2493.12 1642.67 2498.53 1642.67 2504.88C1642.67 2512.16 1645.56 2518.04 1651.35 2522.52C1657.14 2526.81 1665.16 2528.96 1675.43 2528.96C1685.51 2528.96 1694.28 2526.72 1701.75 2522.24C1709.4 2517.76 1714.91 2511.23 1718.27 2502.64L1723.59 2521.12C1720.04 2529.89 1713.79 2536.89 1704.83 2542.12C1695.87 2547.16 1684.58 2549.68 1670.95 2549.68Z" fill="white"/>
+    <!-- n -->
+    <path d="M1794.89 2548V2399.6H1820.65V2439.64L1816.45 2429C1821.31 2419.29 1828.77 2411.73 1838.85 2406.32C1848.93 2400.91 1860.69 2398.2 1874.13 2398.2C1886.27 2398.2 1896.91 2400.53 1906.05 2405.2C1915.39 2409.87 1922.67 2416.96 1927.89 2426.48C1933.12 2436 1935.73 2448.04 1935.73 2462.6V2548H1908.85V2465.68C1908.85 2451.31 1905.31 2440.48 1898.21 2433.2C1891.31 2425.92 1881.51 2422.28 1868.81 2422.28C1859.29 2422.28 1850.99 2424.15 1843.89 2427.88C1836.8 2431.61 1831.29 2437.12 1827.37 2444.4C1823.64 2451.68 1821.77 2460.73 1821.77 2471.56V2548H1794.89Z" fill="white"/>
+    <!-- A -->
+    <path d="M2077.6 2548V2516.64L2076.2 2510.76V2457.28C2076.2 2445.89 2072.84 2437.12 2066.12 2430.96C2059.59 2424.61 2049.69 2421.44 2036.44 2421.44C2027.67 2421.44 2019.08 2422.93 2010.68 2425.92C2002.28 2428.72 1995.19 2432.55 1989.4 2437.4L1978.2 2417.24C1985.85 2411.08 1995 2406.41 2005.64 2403.24C2016.47 2399.88 2027.76 2398.2 2039.52 2398.2C2059.87 2398.2 2075.55 2403.15 2086.56 2413.04C2097.57 2422.93 2103.08 2438.05 2103.08 2458.4V2548H2077.6ZM2028.88 2549.68C2017.87 2549.68 2008.16 2547.81 1999.76 2544.08C1991.55 2540.35 1985.2 2535.21 1980.72 2528.68C1976.24 2521.96 1974 2514.4 1974 2506C1974 2497.97 1975.87 2490.69 1979.6 2484.16C1983.52 2477.63 1989.77 2472.4 1998.36 2468.48C2007.13 2464.56 2018.89 2462.6 2033.64 2462.6H2080.68V2481.92H2034.76C2021.32 2481.92 2012.27 2484.16 2007.6 2488.64C2002.93 2493.12 2000.6 2498.53 2000.6 2504.88C2000.6 2512.16 2003.49 2518.04 2009.28 2522.52C2015.07 2526.81 2023.09 2528.96 2033.36 2528.96C2043.44 2528.96 2052.21 2526.72 2059.68 2522.24C2067.33 2517.76 2072.84 2511.23 2076.2 2502.64L2081.52 2521.12C2077.97 2529.89 2071.72 2536.89 2062.76 2542.12C2053.8 2547.16 2042.51 2549.68 2028.88 2549.68Z" fill="white"/>
+    <!-- u -->
+    <path d="M2215.26 2549.68C2202.57 2549.68 2191.37 2547.35 2181.66 2542.68C2172.14 2538.01 2164.68 2530.92 2159.26 2521.4C2154.04 2511.69 2151.42 2499.56 2151.42 2485V2399.6H2178.3V2481.92C2178.3 2496.48 2181.76 2507.4 2188.66 2514.68C2195.76 2521.96 2205.65 2525.6 2218.34 2525.6C2227.68 2525.6 2235.8 2523.73 2242.7 2520C2249.61 2516.08 2254.93 2510.48 2258.66 2503.2C2262.4 2495.73 2264.26 2486.77 2264.26 2476.32V2399.6H2291.14V2548H2265.66V2507.96L2269.86 2518.6C2265.01 2528.49 2257.73 2536.15 2248.02 2541.56C2238.32 2546.97 2227.4 2549.68 2215.26 2549.68Z" fill="white"/>
+    <!-- t -->
+    <path d="M2393.28 2549.68C2378.34 2549.68 2366.77 2545.67 2358.56 2537.64C2350.34 2529.61 2346.24 2518.13 2346.24 2503.2V2367.12H2373.12V2502.08C2373.12 2510.11 2375.08 2516.27 2379 2520.56C2383.1 2524.85 2388.89 2527 2396.36 2527C2404.76 2527 2411.76 2524.67 2417.36 2520L2425.76 2539.32C2421.65 2542.87 2416.7 2545.48 2410.92 2547.16C2405.32 2548.84 2399.44 2549.68 2393.28 2549.68ZM2321.04 2421.72V2399.6H2415.68V2421.72H2321.04Z" fill="white"/>
+    <!-- o -->
+    <path d="M2516.89 2549.68C2501.96 2549.68 2488.71 2546.41 2477.13 2539.88C2465.56 2533.35 2456.41 2524.39 2449.69 2513C2442.97 2501.43 2439.61 2488.36 2439.61 2473.8C2439.61 2459.05 2442.97 2445.99 2449.69 2434.6C2456.41 2423.21 2465.56 2414.35 2477.13 2408C2488.71 2401.47 2501.96 2398.2 2516.89 2398.2C2531.64 2398.2 2544.8 2401.47 2556.37 2408C2568.13 2414.35 2577.28 2423.21 2583.81 2434.6C2590.53 2445.8 2593.89 2458.87 2593.89 2473.8C2593.89 2488.55 2590.53 2501.61 2583.81 2513C2577.28 2524.39 2568.13 2533.35 2556.37 2539.88C2544.8 2546.41 2531.64 2549.68 2516.89 2549.68ZM2516.89 2526.16C2526.41 2526.16 2534.91 2524.01 2542.37 2519.72C2550.03 2515.43 2556 2509.36 2560.29 2501.52C2564.59 2493.49 2566.73 2484.25 2566.73 2473.8C2566.73 2463.16 2564.59 2454.01 2560.29 2446.36C2556 2438.52 2550.03 2432.45 2542.37 2428.16C2534.91 2423.87 2526.41 2421.72 2516.89 2421.72C2507.37 2421.72 2498.88 2423.87 2491.41 2428.16C2483.95 2432.45 2477.97 2438.52 2473.49 2446.36C2469.01 2454.01 2466.77 2463.16 2466.77 2473.8C2466.77 2484.25 2469.01 2493.49 2473.49 2501.52C2477.97 2509.36 2483.95 2515.43 2491.41 2519.72C2498.88 2524.01 2507.37 2526.16 2516.89 2526.16Z" fill="white"/>
+    <!-- s -->
+    <path d="M2673.63 2549.68C2661.31 2549.68 2649.55 2548 2638.35 2544.64C2627.33 2541.28 2618.65 2537.17 2612.31 2532.32L2623.51 2511.04C2629.85 2515.33 2637.69 2518.97 2647.03 2521.96C2656.36 2524.95 2665.88 2526.44 2675.59 2526.44C2688.09 2526.44 2697.05 2524.67 2702.47 2521.12C2708.07 2517.57 2710.87 2512.63 2710.87 2506.28C2710.87 2501.61 2709.19 2497.97 2705.83 2495.36C2702.47 2492.75 2697.99 2490.79 2692.39 2489.48C2686.97 2488.17 2680.91 2487.05 2674.19 2486.12C2667.47 2485 2660.75 2483.69 2654.03 2482.2C2647.31 2480.52 2641.15 2478.28 2635.55 2475.48C2629.95 2472.49 2625.47 2468.48 2622.11 2463.44C2618.75 2458.21 2617.07 2451.31 2617.07 2442.72C2617.07 2433.76 2619.59 2425.92 2624.63 2419.2C2629.67 2412.48 2636.76 2407.35 2645.91 2403.8C2655.24 2400.07 2666.25 2398.2 2678.95 2398.2C2688.65 2398.2 2698.45 2399.41 2708.35 2401.84C2718.43 2404.08 2726.64 2407.35 2732.99 2411.64L2721.51 2432.92C2714.79 2428.44 2707.79 2425.36 2700.51 2423.68C2693.23 2422 2685.95 2421.16 2678.67 2421.16C2666.91 2421.16 2658.13 2423.12 2652.35 2427.04C2646.56 2430.77 2643.67 2435.63 2643.67 2441.6C2643.67 2446.64 2645.35 2450.56 2648.71 2453.36C2652.25 2455.97 2656.73 2458.03 2662.15 2459.52C2667.75 2461.01 2673.91 2462.32 2680.63 2463.44C2687.35 2464.37 2694.07 2465.68 2700.79 2467.36C2707.51 2468.85 2713.57 2471 2718.99 2473.8C2724.59 2476.6 2729.07 2480.52 2732.43 2485.56C2735.97 2490.6 2737.75 2497.32 2737.75 2505.72C2737.75 2514.68 2735.13 2522.43 2729.91 2528.96C2724.68 2535.49 2717.31 2540.63 2707.79 2544.36C2698.27 2547.91 2686.88 2549.68 2673.63 2549.68Z" fill="white"/>
+  </svg>
+</div>
+
+<!-- CONTENIDO DEL SITIO -->
+<div id="siteContent">
+
+  <!-- NAVBAR -->
+  <nav class="nav" id="nav">
+    <div class="wrap">
+      <div class="nav-i">
+
+        <a href="#inicio" class="logo">
+          <svg width="40" height="34" viewBox="1000 665 1700 1440" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M2305.8 1021.63C2303.64 1031.57 2286.52 1065.24 2272.95 1086.14C2257.21 1110.28 2228.09 1141.52 2208.62 1154.91C2200.94 1159.98 2185.6 1168.71 2174.38 1174.18C2137.01 1192.44 2150.19 1191.23 1963.29 1192.65C1786.63 1193.86 1793.51 1193.46 1777.19 1204.01C1762.04 1213.74 1753.78 1228.15 1745.71 1259.59C1742.56 1271.36 1736.27 1295.1 1731.54 1312.34C1726.82 1329.58 1711.67 1384.76 1697.9 1435.08C1684.13 1485.19 1668.2 1543.61 1662.3 1564.91C1649.9 1609.34 1583.41 1855.42 1573.77 1891.54C1570.23 1904.93 1563.73 1930.08 1559.21 1947.33C1528.72 2064.79 1522.62 2086.29 1519.27 2086.9C1512.58 2088.32 1440.78 2066 1405.56 2051.8C1385.69 2043.69 1345.95 2026.44 1344.97 2025.43C1344.77 2025.23 1349.3 2005.95 1355.2 1982.62C1361.1 1959.29 1372.31 1914.66 1379.99 1883.42C1387.66 1852.18 1397.1 1815.66 1400.64 1802.27C1404.38 1788.88 1415.4 1746.48 1425.24 1707.94C1435.27 1669.39 1447.66 1621.51 1452.78 1601.43C1464.78 1554.97 1510.62 1383.55 1537.37 1284.95C1544.06 1260.4 1552.91 1227.34 1557.24 1211.51C1570.42 1162.01 1577.9 1144.16 1596.98 1114.54C1633.18 1058.95 1699.08 1021.63 1768.53 1017.57C1774.04 1017.16 1897.39 1016.76 2042.77 1016.55L2306.98 1016.15L2305.8 1021.63Z" fill="white"/>
+            <path d="M2130.51 1353.32C2127.96 1362.04 2107.5 1400.59 2098.45 1413.78C2071.69 1452.93 2038.44 1480.72 1999.29 1496.75C1966.83 1509.94 1970.57 1509.53 1859.03 1510.95L1756.73 1512.17L1737.84 1518.86C1718.76 1525.35 1701.25 1535.7 1689.05 1547.47C1685.51 1551.12 1681.97 1553.55 1681.58 1552.94C1680.98 1552.34 1683.74 1541.18 1687.67 1527.99C1693.74 1507.21 1705.05 1467.38 1730.91 1376.38L1731.35 1374.82C1735.09 1361.84 1738.04 1350.48 1738.04 1349.87C1738.04 1349.26 1826.57 1348.86 1934.96 1348.86H2131.69L2130.51 1353.32Z" fill="white"/>
+            <path d="M1894.44 681.614C1976.47 688.918 2065.2 714.885 2139.37 753.228C2240.49 805.568 2323.11 878.196 2389.61 973.545C2456.1 1068.69 2499.97 1187.98 2513.35 1310.31C2517.29 1345.2 2516.7 1428.58 2512.37 1463.48C2498.6 1576.27 2461.02 1682.78 2401.41 1778.94C2370.92 1827.83 2319.18 1888.7 2276.29 1925.82C2233.4 1963.15 2194.45 1989.93 2146.45 2015.49C2052.22 2065.6 1957.59 2089.13 1851.16 2089.33C1760.86 2089.33 1690.23 2074.93 1602.69 2038.82C1562.36 2022.18 1556.45 2018.94 1558.03 2014.68C1558.62 2012.85 1561.18 2004.53 1563.54 1996.62C1565.7 1988.51 1568.46 1981.81 1569.44 1981.81C1570.62 1981.81 1579.87 1985.87 1590.29 1990.74C1746.69 2064.38 1918.05 2069.66 2076.81 2005.35C2230.06 1943.47 2355.18 1817.49 2425.22 1654.18C2454.14 1587.23 2474.01 1500.4 2479.71 1418.85C2481.68 1389.23 2479.91 1332.83 2475.78 1300.17C2461.02 1181.08 2412.04 1061.79 2338.06 965.43C2319.18 940.883 2273.93 893.614 2249.54 872.719C2124.22 766.009 1962.11 711.233 1803.35 721.58C1684.92 729.289 1591.67 762.763 1489.17 834.376C1358.74 925.262 1262.74 1072.14 1227.72 1234.23C1216.11 1287.59 1213.95 1310.72 1213.95 1377.26C1213.95 1430.61 1214.54 1442.99 1218.08 1466.52C1236.96 1590.27 1280.05 1697.19 1348.71 1791.72C1358.74 1805.32 1369.36 1819.31 1372.51 1822.76L1378.41 1829.25L1372.9 1849.14C1369.95 1860.29 1367.2 1869.63 1366.81 1870.03C1365.63 1871.86 1355.4 1860.5 1335.92 1835.75C1313.69 1807.34 1311.92 1804.91 1292.25 1774.68C1233.42 1684.2 1192.5 1567.15 1180.11 1453.33C1175.98 1414.79 1175.98 1346.02 1180.11 1307.27C1197.22 1145.99 1262.54 1001.74 1370.15 887.528C1484.45 766.414 1635.15 692.975 1795.09 680.803C1816.14 679.18 1872.8 679.586 1894.44 681.614Z" fill="white"/>
+            <path d="M2575.52 927.697C2583.78 940.883 2609.36 993.021 2620.37 1019.19C2655.59 1102.57 2679.39 1188.99 2687.26 1261.82C2696.11 1345.61 2695.52 1412.96 2685.1 1492.89C2667.19 1629.63 2622.34 1755 2547.98 1875.31C2523.58 1914.87 2484.43 1968.02 2456.69 1999.67L2447.25 2010.42L2432.1 2003.93C2423.64 2000.48 2416.76 1996.42 2416.76 1995C2416.76 1993.78 2418.72 1990.94 2420.89 1988.71C2428.56 1981.61 2453.35 1950.57 2474.6 1921.36C2578.08 1779.15 2637.29 1626.38 2653.82 1459.62C2657.36 1424.12 2657.95 1341.55 2654.8 1304.22C2650.28 1248.03 2640.05 1194.47 2623.32 1136.86C2603.65 1069.91 2579.85 1012.29 2548.96 956.707L2538.93 938.854L2546.21 934.188C2561.94 924.045 2567.26 920.799 2569.22 920.799C2570.4 920.799 2573.16 924.045 2575.52 927.697Z" fill="white"/>
+            <path d="M1160.83 919.987C1167.72 925.059 1173.42 929.725 1173.42 930.131C1173.42 930.537 1166.73 942.506 1158.47 956.707C1087.84 1077.42 1045.74 1234.64 1045.55 1377.46C1045.55 1499.79 1077.42 1635.31 1134.07 1753.58C1165.94 1820.13 1201.75 1876.73 1250.15 1936.98C1259.98 1949.15 1267.85 1959.5 1267.85 1960.11C1267.85 1960.92 1260.77 1964.98 1251.92 1969.24L1235.98 1977.15L1227.52 1967.82C1205.68 1943.88 1168.31 1892.14 1144.7 1852.99C1052.43 1700.84 1001.48 1505.88 1010.13 1337.29C1016.23 1218 1039.64 1118.4 1086.47 1012.7C1107.32 966.039 1140.57 907.612 1145.29 909.438C1146.86 910.047 1153.75 914.916 1160.83 919.987Z" fill="white"/>
+          </svg>
+          <div>
+            <span class="logo-n">Freimanautos</span>
+            <span class="logo-s">Servicio Profesional · Bogotá</span>
+          </div>
+        </a>
+
+        <ul class="nav-links" id="nl">
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#historia">Nosotros</a></li>
+          <li><a href="#resenas">Reseñas</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+          <li>
+            <a href="https://wa.me/573104786749" class="nav-wa" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" width="13" height="13">
+                <path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.16-.17.2-.35.22-.65.08-.3-.15-1.25-.46-2.39-1.48-.88-.79-1.48-1.76-1.65-2.06-.18-.3-.02-.46.13-.6.13-.14.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.61-.92-2.21-.24-.58-.49-.5-.67-.51-.17-.01-.37-.01-.57-.01-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.21 3.07c.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.69.62.71.23 1.36.2 1.87.12.57-.08 1.76-.72 2.01-1.41.25-.69.25-1.29.17-1.41-.07-.12-.27-.2-.57-.35zm-5.47 7.47c-1.9 0-3.78-.5-5.37-1.47l-.38-.23-3.98 1.05 1.05-3.98-.23-.38C2 15.78 1.5 13.9 1.5 12 1.5 6.2 6.2 1.5 12 1.5S22.5 6.2 22.5 12 17.8 22.5 12 22.5zm0-22.5C5.37 0 0 5.37 0 12c0 2.14.56 4.15 1.55 5.89L.06 23.54a.75.75 0 00.91.91l5.66-1.49A11.95 11.95 0 0012 24c6.63 0 12-5.37 12-12S18.63 0 12 0z"/>
+              </svg>
+              WhatsApp
+            </a>
+          </li>
+        </ul>
+
+        <button class="hbg" id="hbg" aria-label="Abrir menú" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO — video solo visible aquí, desaparece al scrollear -->
+  <section id="inicio" class="hero">
+    <!-- Filtro de enfoque (unsharp mask) para el video -->
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+      <filter id="sharpen">
+        <feConvolveMatrix order="3" preserveAlpha="true"
+          kernelMatrix="0 -0.6 0 -0.6 3.4 -0.6 0 -0.6 0"/>
+      </filter>
+    </svg>
+    <video class="hero-video" autoplay muted playsinline aria-hidden="true">
+      <source src="video/fondo.mp4" type="video/mp4">
+    </video>
+    <div class="hero-overlay" aria-hidden="true"></div>
+    <div class="wrap" style="position:relative;z-index:2;width:100%">
+      <div class="h-content">
+        <div class="h-ey">
+          <span class="eyebrow">Desde 1987 · Bogotá, Colombia</span>
+        </div>
+        <h1 class="d h-title">
+          <span class="l1">Servicio</span>
+          <span class="l2">Automotriz</span>
+          <span class="l3">Profesional</span>
+        </h1>
+        <p class="h-sub">
+          Especialistas en marcas asiáticas con 39 años de trayectoria. Latonería, pintura, mecánica y detailing con repuestos 100% originales y técnicos certificados.
+        </p>
+        <div class="h-acts">
+          <a href="https://wa.me/573104786749" class="btn-p" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" width="17" height="17">
+              <path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.16-.17.2-.35.22-.65.08-.3-.15-1.25-.46-2.39-1.48-.88-.79-1.48-1.76-1.65-2.06-.18-.3-.02-.46.13-.6.13-.14.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.61-.92-2.21-.24-.58-.49-.5-.67-.51-.17-.01-.37-.01-.57-.01-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.21 3.07c.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.69.62.71.23 1.36.2 1.87.12.57-.08 1.76-.72 2.01-1.41.25-.69.25-1.29.17-1.41-.07-.12-.27-.2-.57-.35zm-5.47 7.47c-1.9 0-3.78-.5-5.37-1.47l-.38-.23-3.98 1.05 1.05-3.98-.23-.38C2 15.78 1.5 13.9 1.5 12 1.5 6.2 6.2 1.5 12 1.5S22.5 6.2 22.5 12 17.8 22.5 12 22.5zm0-22.5C5.37 0 0 5.37 0 12c0 2.14.56 4.15 1.55 5.89L.06 23.54a.75.75 0 00.91.91l5.66-1.49A11.95 11.95 0 0012 24c6.63 0 12-5.37 12-12S18.63 0 12 0z"/>
+            </svg>
+            Cotizar por WhatsApp
+          </a>
+          <a href="#servicios" class="btn-s">Ver Servicios</a>
+        </div>
+      </div>
+
+      <div class="h-badge" aria-hidden="true">
+        <span class="h-badge-n">39</span>
+        <span class="h-badge-l">Años de<br>Experiencia</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS (fondo sólido negro → cubre el logo watermark al hacer scroll) -->
+  <div id="stats" class="stats">
+    <div class="wrap">
+      <div class="stats-g">
+        <div class="st rev">
+          <div class="st-n" data-t="39" data-s=" Años">0</div>
+          <div class="st-l">De Experiencia</div>
+        </div>
+        <div class="st rev">
+          <div class="st-n" data-t="95" data-s="%">0</div>
+          <div class="st-l">Satisfacción del Cliente</div>
+        </div>
+        <div class="st rev">
+          <div class="st-n" data-t="2000" data-s="m²">0</div>
+          <div class="st-l">Infraestructura</div>
+        </div>
+        <div class="st rev">
+          <div class="st-n" data-t="100" data-s="%">0</div>
+          <div class="st-l">Repuestos Originales</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SERVICIOS -->
+  <section id="servicios" class="sec solid">
+    <div class="wrap">
+      <div class="sh rev">
+        <div class="eyebrow">Lo que hacemos por tu automóvil</div>
+        <h2 class="d">Servicios<br>Especializados</h2>
+        <p>Cada servicio ejecutado por técnicos altamente capacitados, con equipos certificados y repuestos de calidad garantizada.</p>
+      </div>
+      <div class="srv-g rev">
+
+        <div class="srv">
+          <div class="srv-ico">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M3 7l3-4h12l3 4M3 7h18M3 7v11a1 1 0 001 1h1a1 1 0 001-1v-1h12v1a1 1 0 001 1h1a1 1 0 001-1V7"/>
+              <circle cx="7.5" cy="14.5" r="1.5"/><circle cx="16.5" cy="14.5" r="1.5"/>
+            </svg>
+          </div>
+          <div><div class="srv-t">Latonería</div><span class="srv-tag">Carrocería</span></div>
+          <p class="srv-d">Reparación de golpes, abolladuras y deformaciones estructurales con equipos de alineación de carrocería de última generación.</p>
+        </div>
+
+        <div class="srv">
+          <div class="srv-ico">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="12" cy="12" r="3"/>
+              <path d="M19.07 4.93A10 10 0 005 5.1m14.07-.17A10 10 0 115 18.9"/>
+              <path d="M15 12h6M3 12h3"/>
+            </svg>
+          </div>
+          <div><div class="srv-t">Pintura</div><span class="srv-tag">Acabado Original</span></div>
+          <p class="srv-d">Cabina de alta temperatura, mezcla computarizada de colores y acabado perfecto que iguala la pintura original de fábrica.</p>
+        </div>
+
+        <div class="srv">
+          <div class="srv-ico">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/>
+            </svg>
+          </div>
+          <div><div class="srv-t">Mecánica</div><span class="srv-tag">Diagnóstico Computarizado</span></div>
+          <p class="srv-d">Diagnóstico computarizado, mantenimiento preventivo y correctivo con técnicos especializados en marca y equipos certificados.</p>
+        </div>
+
+        <div class="srv">
+          <div class="srv-ico">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6z"/>
+            </svg>
+          </div>
+          <div><div class="srv-t">Detailing</div><span class="srv-tag">Acabado Profesional</span></div>
+          <p class="srv-d">Limpieza profunda, pulida, encerada y restauración de superficies internas y externas a nivel profesional con productos premium.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- GALERÍA -->
+  <!-- Para agregar fotos: en css/styles.css busca "GALERÍA FOTOS" y agrega background-image -->
+  <section id="galeria" class="sec gal solid">
+    <div class="wrap">
+      <div class="sh rev">
+        <div class="eyebrow">Nuestras Instalaciones</div>
+        <h2 class="d">El Taller</h2>
+      </div>
+      <div class="gal-g rev">
+        <div class="gi"><span class="gi-l">Área de Latonería</span></div>
+        <div class="gi"><span class="gi-l">Cabina de Pintura</span></div>
+        <div class="gi"><span class="gi-l">Diagnóstico</span></div>
+        <div class="gi"><span class="gi-l">Zona de Detailing</span></div>
+        <div class="gi"><span class="gi-l">Recepción</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUIÉNES SOMOS -->
+  <section id="historia" class="sec solid">
+    <div class="wrap">
+      <div class="sh rev">
+        <div class="eyebrow">Nuestra Historia</div>
+        <h2 class="d">Quiénes<br>Somos</h2>
+      </div>
+      <div class="hist-l">
+        <div class="hist-c">
+          <div class="hb rev">
+            <div class="hb-t">Los Orígenes</div>
+            <p>Freimanautos nació en 1987 en Bogotá como un pequeño taller familiar con una visión clara: especializarse en vehículos de marcas asiáticas cuando estas apenas comenzaban a ganar presencia en Colombia.</p>
+            <p>Lo que comenzó con cuatro personas en 200 m² hoy es una operación de más de 2.000 m² con tecnología de diagnóstico de última generación y más de 20 técnicos certificados.</p>
+          </div>
+          <div class="hb rev">
+            <div class="hb-t">Nuestra Filosofía</div>
+            <p>No somos un taller que hace de todo — somos el taller que domina cada detalle del vehículo. Cada técnico, cada herramienta, cada proceso está diseñado para entregar lo mejor.</p>
+            <p>Más de tres décadas atendiendo personas, aseguradoras y empresas en Bogotá nos han enseñado que la confianza se gana entrega a entrega, no con palabras.</p>
+          </div>
+          <div class="hb rev">
+            <div class="hb-t">Hoy</div>
+            <p>Freimanautos es reconocido como uno de los talleres independientes de mayor reputación en Colombia, con procesos certificados, repuestos originales y un equipo que vive y respira la marca cada día.</p>
+          </div>
+        </div>
+
+        <div class="aside rev" id="aside">
+          <div class="ai"><span class="ai-ic">🏆</span><div><strong>39 Años de Trayectoria</strong><span>Más de tres décadas siendo referente en servicio automotriz en Bogotá.</span></div></div>
+          <div class="ai"><span class="ai-ic">🔧</span><div><strong>Técnicos Certificados</strong><span>Certificaciones especializadas actualizadas con los últimos modelos.</span></div></div>
+          <div class="ai"><span class="ai-ic">🏗️</span><div><strong>2.000 m² de Infraestructura</strong><span>Cabina de pintura, latonería, mecánica y zona de entrega.</span></div></div>
+          <div class="ai"><span class="ai-ic">🤝</span><div><strong>Alianzas con Aseguradoras</strong><span>Coordinación directa con todas las aseguradoras del mercado colombiano.</span></div></div>
+          <div class="ai"><span class="ai-ic">⭐</span><div><strong>Reconocimiento del Sector</strong><span>Referente para clientes, flotas empresariales y aseguradoras.</span></div></div>
+          <div class="ai"><span class="ai-ic">📦</span><div><strong>Repuestos 100% Originales</strong><span>Solo trabajamos con repuestos originales certificados. Sin compromiso.</span></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESEÑAS -->
+  <section id="resenas" class="sec rev-bg solid">
+    <div class="wrap">
+      <div class="rev-head rev">
+        <div>
+          <div class="eyebrow">Lo que dicen nuestros clientes</div>
+          <h2 class="d">Reseñas<br>Verificadas</h2>
+        </div>
+        <div style="display:flex;align-items:center;gap:1.4rem">
+          <div class="rat-big">4.8</div>
+          <div class="rat-d">
+            <div class="stars">★★★★★</div>
+            <div class="rat-s">+120 Reseñas en Google</div>
+            <a href="https://www.google.com/search?q=Freimanautos+Bogota" class="g-link" target="_blank" rel="noopener noreferrer">
+              Ver todas
+              <svg width="11" height="11" viewBox="0 0 16 16" stroke="currentColor" fill="none" stroke-width="2" aria-hidden="true"><path d="M3 8h10M8 3l5 5-5 5"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="rc-wrap rev">
+        <div class="rc-track" id="rct">
+          <div class="rc"><div class="rc-stars">★★★★★</div><p class="rc-txt">"Llevé mi camioneta después de un choque y quedó como nuevo. El trabajo de latonería y pintura fue impecable. El equipo es muy profesional y me mantuvieron informado durante todo el proceso."</p><div class="rc-auth"><div class="rc-av">CR</div><div><div class="rc-nm">Carlos R.</div><div class="rc-dt">Hace 2 semanas</div></div></div></div>
+          <div class="rc"><div class="rc-stars">★★★★★</div><p class="rc-txt">"Más de 10 años llevando mis carros aquí. La honestidad y calidad de su trabajo no tiene comparación. No te cobran lo que no necesitas y los repuestos siempre son originales."</p><div class="rc-auth"><div class="rc-av">MP</div><div><div class="rc-nm">María P.</div><div class="rc-dt">Hace 1 mes</div></div></div></div>
+          <div class="rc"><div class="rc-stars">★★★★★</div><p class="rc-txt">"Excelente atención desde el primer momento. Me explicaron todo el proceso, los tiempos fueron exactos y el resultado superó mis expectativas. Mi Elantra quedó perfecto. 100% recomendados."</p><div class="rc-auth"><div class="rc-av">JG</div><div><div class="rc-nm">Jorge G.</div><div class="rc-dt">Hace 3 semanas</div></div></div></div>
+          <div class="rc"><div class="rc-stars">★★★★★</div><p class="rc-txt">"Nuestra empresa tiene una flota de 12 vehículos y Freimanautos lleva el mantenimiento de todos. Su coordinación con las aseguradoras es impecable y la calidad siempre es consistente."</p><div class="rc-auth"><div class="rc-av">LM</div><div><div class="rc-nm">Luis M. — Flota empresarial</div><div class="rc-dt">Hace 2 meses</div></div></div></div>
+          <div class="rc"><div class="rc-stars">★★★★★</div><p class="rc-txt">"Vine por recomendación y no me arrepiento. El detailing quedó espectacular, mi Creta parece nueva de concesionario. El trato es muy amable y el precio es justo para la calidad."</p><div class="rc-auth"><div class="rc-av">AV</div><div><div class="rc-nm">Adriana V.</div><div class="rc-dt">Hace 1 mes</div></div></div></div>
+          <div class="rc"><div class="rc-stars">★★★★☆</div><p class="rc-txt">"Muy buen taller. Llevé mi Santa Fe por un problema eléctrico que en otros talleres no lograban diagnosticar. Aquí lo identificaron el primer día. Atención de primera y seguimiento excelente."</p><div class="rc-auth"><div class="rc-av">RP</div><div><div class="rc-nm">Ricardo P.</div><div class="rc-dt">Hace 3 meses</div></div></div></div>
+        </div>
+      </div>
+
+      <div class="rc-ctrls rev">
+        <button class="rc-btn" id="rp" aria-label="Reseña anterior"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg></button>
+        <div class="rc-dots" id="rd"></div>
+        <button class="rc-btn" id="rn" aria-label="Reseña siguiente"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section id="contacto" class="sec solid">
+    <div class="wrap">
+      <div class="sh rev">
+        <div class="eyebrow">Contáctenos</div>
+        <h2 class="d">Solicite su<br>Cotización</h2>
+        <p>Respuesta rápida por WhatsApp. También puede visitarnos directamente en nuestro taller en Bogotá.</p>
+      </div>
+      <div class="ct-l">
+        <div class="ct-info rev">
+          <div class="ct-det">
+            <span class="ct-lbl">WhatsApp</span>
+            <span class="ct-val"><a href="https://wa.me/573104786749">310 478 6749</a></span>
+          </div>
+          <div class="ct-det">
+            <span class="ct-lbl">Dirección</span>
+            <span class="ct-val">Calle 98A 68D – 15<br>Barrio Floresta, Bogotá</span>
+          </div>
+          <a href="https://wa.me/573104786749" class="btn-wa" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" width="19" height="19">
+              <path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.16-.17.2-.35.22-.65.08-.3-.15-1.25-.46-2.39-1.48-.88-.79-1.48-1.76-1.65-2.06-.18-.3-.02-.46.13-.6.13-.14.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.61-.92-2.21-.24-.58-.49-.5-.67-.51-.17-.01-.37-.01-.57-.01-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.21 3.07c.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.69.62.71.23 1.36.2 1.87.12.57-.08 1.76-.72 2.01-1.41.25-.69.25-1.29.17-1.41-.07-.12-.27-.2-.57-.35zm-5.47 7.47c-1.9 0-3.78-.5-5.37-1.47l-.38-.23-3.98 1.05 1.05-3.98-.23-.38C2 15.78 1.5 13.9 1.5 12 1.5 6.2 6.2 1.5 12 1.5S22.5 6.2 22.5 12 17.8 22.5 12 22.5zm0-22.5C5.37 0 0 5.37 0 12c0 2.14.56 4.15 1.55 5.89L.06 23.54a.75.75 0 00.91.91l5.66-1.49A11.95 11.95 0 0012 24c6.63 0 12-5.37 12-12S18.63 0 12 0z"/>
+            </svg>
+            Escribir por WhatsApp
+          </a>
+        </div>
+        <div class="ct-aside rev">
+          <div class="map-wrap">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.49!2d-74.0917!3d4.7058!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sFreimanautos!5e0!3m2!1ses!2sco!4v1000000!5m2!1ses!2sco"
+              loading="lazy" title="Ubicación Freimanautos" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+          </div>
+          <div class="hrs">
+            <div class="hrs-h">Horarios de Atención</div>
+            <div class="hr-row"><span class="hr-day">Lunes – Viernes</span><span class="hr-time">8:00 AM – 6:00 PM</span></div>
+            <div class="hr-row"><span class="hr-day">Sábados</span><span class="hr-time">8:00 AM – 1:00 PM</span></div>
+            <div class="hr-row"><span class="hr-day">Domingos y Festivos</span><span class="hr-closed">Cerrado</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="ft solid">
+    <div class="wrap">
+      <div class="ft-i">
+        <a href="#inicio" class="ft-br">
+          <svg width="28" height="28" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <defs><clipPath id="ftClip"><circle cx="120" cy="120" r="87"/></clipPath></defs>
+            <circle cx="120" cy="120" r="88" fill="none" stroke="rgba(255,255,255,.5)" stroke-width="2.5"/>
+            <g clip-path="url(#ftClip)">
+              <path d="M58,183 L80,183 L80,124 L133,124 L137,116 L133,108 L80,108 L80,62 L156,53 L162,37 L58,43 Z" fill="rgba(255,255,255,.5)"/>
+            </g>
+          </svg>
+          <span style="font-family:'Arial Narrow',Arial,sans-serif;font-weight:900;font-size:.88rem;letter-spacing:.05em;text-transform:uppercase;color:var(--t3)">Freimanautos</span>
+        </a>
+        <p class="ft-cp">© 2025 Freimanautos SA · Servicio Profesional Automotriz · Bogotá, Colombia</p>
+        <ul class="ft-nav">
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#historia">Nosotros</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+</div><!-- /siteContent -->
+
+<!-- SCROLL TOP -->
+<button class="stt" id="stt" aria-label="Volver arriba">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 15l-6-6-6 6"/></svg>
+</button>
+
+<script src="js/main.js"></script>
+</body>
+</html>
