@@ -46,7 +46,9 @@ body {
   text-transform: uppercase;
   color: #ffffff;
 }
-h1.d { font-size: clamp(3.2rem, 9vw, 7.8rem); }
+/* Limitado por ancho (9vw) Y por alto (11vh): en portátiles de pantalla
+   baja el título se reduce para no montarse sobre el menú */
+h1.d { font-size: clamp(2.6rem, min(9vw, 11vh), 7.8rem); }
 h2.d { font-size: clamp(2rem, 5vw, 4rem); }
 .wrap { max-width: 1200px; margin: 0 auto; padding: 0 clamp(1.25rem,5vw,3rem); }
 
@@ -182,7 +184,8 @@ h2.d { font-size: clamp(2rem, 5vw, 4rem); }
   min-height: 100vh;
   display: flex;
   align-items: flex-end;
-  padding-bottom: clamp(4rem,10vh,7rem);
+  padding-top: 110px;   /* nunca montar el contenido bajo el navbar */
+  padding-bottom: clamp(3rem,8vh,7rem);
   background: transparent;
 }
 .h-content { position:relative; z-index:2; max-width:860px; }
@@ -214,6 +217,12 @@ h2.d { font-size: clamp(2rem, 5vw, 4rem); }
 .h-badge-n { font-family:'Anton',sans-serif; font-size:3.2rem; line-height:1; color:var(--gold-l); }
 .h-badge-l { font-size:.6rem; letter-spacing:.12em; text-transform:uppercase; color:var(--t2); margin-top:.3rem; }
 @media(max-width:768px){ .h-badge{display:none} .hero{padding-top:100px;align-items:center} }
+/* Pantallas bajas (portátiles): compactar espacios verticales del hero */
+@media(max-height:760px){
+  .h-title { margin-bottom:1rem; }
+  .h-sub   { margin-bottom:1.5rem; }
+  .h-ey    { margin-bottom:1rem; }
+}
 
 /* ── SECCIONES — negro sólido, tapan el video al scrollear ── */
 /* z-index < 50 para que el logo watermark quede encima */
