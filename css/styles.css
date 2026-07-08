@@ -226,15 +226,16 @@ h2.d { font-size: clamp(2rem, 5vw, 4rem); }
 }
 .gal-track {
   display: flex;
-  gap: 6px;
   width: max-content;
   animation: galSlide 35s linear infinite;
+  will-change: transform;
 }
 .gal-carousel:hover .gal-track { animation-play-state: paused; }
 .gi {
   width: clamp(240px, 30vw, 420px);
   height: 260px;
   flex-shrink: 0;
+  margin-right: 6px;   /* en lugar de gap: así -50% cae exacto y el loop no salta */
   background: rgba(20,20,20,0.88);
   border-radius: 3px;
   overflow: hidden;
