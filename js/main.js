@@ -1,10 +1,18 @@
 (function () {
   'use strict';
 
-  /* ── VIDEO + LOGO WATERMARK — controlados por scroll ────── */
+  /* ── VIDEO + LOGO HERO + LOGO WATERMARK ─────────────────── */
   const bgVideo  = document.querySelector('.hero-video');
+  const heroLogo = document.getElementById('heroLogo');
   const logoWm   = document.getElementById('logoWatermark');
   const LOGO_MAX = 0.20;
+
+  // Al terminar el video del auto → encender el logo SVG nítido
+  if (bgVideo && heroLogo) {
+    bgVideo.addEventListener('ended', () => heroLogo.classList.add('on'));
+    // Respaldo por si el evento no dispara (pestaña en segundo plano, etc.)
+    setTimeout(() => heroLogo.classList.add('on'), 5200);
+  }
 
   function updateScrollEffects() {
     const scrollY = window.scrollY;
@@ -39,6 +47,13 @@
 
     if (bgVideo) bgVideo.style.opacity = videoOp;
     if (logoWm)  logoWm.style.opacity  = logoOp;
+    // El logo del hero se desvanece junto con el video al bajar.
+    // Antes de encenderse ('on') no se toca el inline style,
+    // para no pisar la transición CSS del fade-in.
+    if (heroLogo) {
+      if (heroLogo.classList.contains('on')) heroLogo.style.opacity = videoOp;
+      else heroLogo.style.opacity = '';
+    }
   }
 
   // Ejecutar en cada frame de scroll para suavidad

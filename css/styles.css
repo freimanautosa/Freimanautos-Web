@@ -128,6 +128,28 @@ h2.d { font-size: clamp(2rem, 5vw, 4rem); }
   filter: url(#sharpen) contrast(1.06) saturate(1.05);
 }
 
+/* ── HERO LOGO — SVG nítido, aparece al terminar el video ── */
+.hero-logo {
+  position: fixed;
+  top: 46%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.94);
+  height: min(58vh, 70vw);
+  width: calc(min(58vh, 70vw) * 1.17);
+  opacity: 0;
+  z-index: 0;
+  pointer-events: none;
+  transition: opacity 2s ease, transform 2.4s cubic-bezier(.16,1,.3,1);
+  /* Glow de "logo iluminado" pero nítido (vector, no video) */
+  filter:
+    drop-shadow(0 0 18px rgba(255,255,255,.30))
+    drop-shadow(0 0 70px rgba(255,255,255,.14));
+}
+.hero-logo.on {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+}
+
 /* ── HERO OVERLAY — gradiente sutil para legibilidad del texto ── */
 .hero-overlay {
   position: absolute;
