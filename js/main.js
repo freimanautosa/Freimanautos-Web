@@ -156,6 +156,31 @@
   const aside = document.getElementById('aside');
   if (aside) asideObs.observe(aside);
 
+  /* ── GALERÍA — carrusel infinito sin saltos (px exactos) ── */
+  const galTrack = document.querySelector('.gal-track');
+  const galWrap  = document.querySelector('.gal-carousel');
+
+  if (galTrack && galWrap) {
+    let offset  = 0;
+    let paused  = false;
+    const SPEED = 0.6;   // px por frame (~36 px/s a 60fps)
+
+    galWrap.addEventListener('mouseenter', () => { paused = true; });
+    galWrap.addEventListener('mouseleave', () => { paused = false; });
+
+    function galStep() {
+      if (!paused) {
+        // la mitad exacta del track en píxeles reales
+        const half = galTrack.scrollWidth / 2;
+        offset += SPEED;
+        if (offset >= half) offset -= half;   // reinicio exacto, imperceptible
+        galTrack.style.transform = `translateX(-${offset}px)`;
+      }
+      requestAnimationFrame(galStep);
+    }
+    requestAnimationFrame(galStep);
+  }
+
   /* ── REVIEWS CAROUSEL ──────────────────────────────────── */
   const track = document.getElementById('rct');
   const rdots = document.getElementById('rd');

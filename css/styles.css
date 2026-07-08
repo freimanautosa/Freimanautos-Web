@@ -212,11 +212,7 @@ h2.d { font-size: clamp(2rem, 5vw, 4rem); }
 .srv-tag { display:inline-block; padding:.22rem .6rem; background:var(--blue-d); border:1px solid rgba(26,111,196,.18); border-radius:2px; font-size:.62rem; letter-spacing:.1em; text-transform:uppercase; color:#ffffff; font-weight:600; }
 
 /* ── GALERÍA ─────────────────────────────────────────────── */
-/* Carrusel deslizante automático e infinito */
-@keyframes galSlide {
-  from { transform: translateX(0); }
-  to   { transform: translateX(-50%); }  /* items duplicados → loop perfecto */
-}
+/* Carrusel deslizante automático e infinito (movimiento controlado por JS) */
 .gal-carousel {
   overflow: hidden;
   margin-top: 2.5rem;
@@ -227,10 +223,8 @@ h2.d { font-size: clamp(2rem, 5vw, 4rem); }
 .gal-track {
   display: flex;
   width: max-content;
-  animation: galSlide 35s linear infinite;
   will-change: transform;
 }
-.gal-carousel:hover .gal-track { animation-play-state: paused; }
 .gi {
   width: clamp(240px, 30vw, 420px);
   height: 260px;
